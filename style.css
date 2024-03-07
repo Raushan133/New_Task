@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+
+.Task {
+  height: 40vh;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid green;
+  border-radius: 10px;
+}
+
+.Task img {
+  height: 9rem;
+  border-radius: 5px;
+}
+
+button {
+  width: 80%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .Task {
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .Task img {
+    height: 6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .Task {
+    width: calc(50% - 20px);
+  }
+  .Task img {
+    height: 10rem;
+  }
+}
